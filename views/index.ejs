@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.1/css/all.css'
+    integrity='sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/microsoft-cognitiveservices-speech-sdk@latest/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle-min.js">
+    </script>
+  <script src="/common.js"></script>
+  <title>Speech sample app</title>
+</head>
+
+<body class="background p-4">
+  <div id="root">
+    <Container class="app-container">
+      <h1 class="display-4 mb-3">Speech sample app</h1>
+      <div class="row main-container">
+        <div class="col-6">
+          <div class="mt-2">
+            <label class="fas fa-microphone fa-lg mr-2">Mic recognition</label>
+            <input type="button" value="Click" onClick="sttFromMic()">
+          </div>
+          <div class="mt-2">
+            <label for="audio-file" class="mt-3">File recognition</label>
+            <input type="file" id="audio-file" />
+          </div>
+        </div>
+        <hr>
+        <div class="col-6 output-display rounded" , id="output">Output</div>
+      </div>
+    </Container>
+  </div>
+  <script src="/token_util.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>

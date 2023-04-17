@@ -1,0 +1,44 @@
+{
+  "name": "speech-sample",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.4",
+    "microsoft-cognitiveservices-speech-sdk": "^1.18.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.9",
+    "nodemon": "^2.0.7"
+  },
+  "proxy": "http://localhost:3001",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
